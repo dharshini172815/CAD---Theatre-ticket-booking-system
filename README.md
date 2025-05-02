@@ -11,13 +11,14 @@ Target Audience :	General Public, Theatre Owners
 
 Type            :	B2C & B2B
 
-Time            :	3 weeks
+Time            :	1 month
 
 Budget          :	Rs. 0
 
-Total Members   :	1
+Total Members   :	2
 
 Features:
+---------
 
 * Register & Login.
 * Browse movies and showtimes.
@@ -32,3 +33,10 @@ Features:
 * Admin panel to add/remove movies
 * Showtime and seat management 
 * Dashboard for theatre performance analytics
+
+Future Implementations :
+------------------------
+
+* In-app Food Ordering System
+* Movie Trailer Preview and Ratings
+* Smart Suggestion System (based on user history)
