@@ -4,11 +4,17 @@ THEATRE TICKET BOOKING
 ----------------------
 
 Project         :	Theatre Ticket Booking System
-Title           :   QuickSeat – Smart Booking Portal
+
+Title           : QuickSeat – Smart Booking Portal
+
 Target Audience :	General Public, Theatre Owners
+
 Type            :	B2C & B2B
+
 Time            :	3 weeks
+
 Budget          :	Rs. 0
+
 Total Members   :	1
 
 Features:
