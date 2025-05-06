@@ -14,7 +14,7 @@ Type            :	B2C & B2B
 Time            :	1 month
 
 Budget          :	Rs. 0
-
+ 
 Total Members   :	2
 
 Features:
