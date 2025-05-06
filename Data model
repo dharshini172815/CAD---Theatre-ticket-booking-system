@@ -1,0 +1,120 @@
+1. Class User
+-------------
+    - userID: int
+    - userName: String
+    - email: String
+    - password: String
+    - phone: String
+    - role: String  // "user" or "admin"
+
+2. Class Movie
+--------------
+    - movieID: int
+    - title: String
+    - genre: String
+    - language: String
+    - duration: String
+    - description: String
+
+3. Class Theatre
+----------------
+    - theatreID: int
+    - name: String
+    - location: String
+    - halls: List<Hall>
+
+4. Class Hall
+-------------
+    - hallID: int
+    - name: String
+    - seatLayout: SeatLayout
+
+5. Class SeatLayout
+-------------------
+    - rows: int
+    - columns: int
+    - seats: List<Seat>
+
+6. Class Seat
+-------------
+    - seatID: String
+    - row: int
+    - column: int
+    - isAvailable: boolean
+    - category: String  // e.g., Regular, VIP
+
+7. Class Show
+-------------
+    - showID: int
+    - movie: Movie
+    - hall: Hall
+    - showTime: String
+    - availableSeats: List<Seat>
+
+8. Class Booking
+----------------
+    - bookingID: int
+    - user: User
+    - show: Show
+    - bookedSeats: List<Seat>
+    - bookingTime: String
+    - totalAmount: double
+    - paymentStatus: String
+    - isCancelled: boolean
+
+9. Class Payment
+----------------
+    - paymentID: int
+    - booking: Booking
+    - amountPaid: double
+    - paymentMethod: String  // UPI, Card, etc.
+    - paymentStatus: String  // Success/Failed
+
+10. Class CancellationPolicy
+----------------------------
+    - booking: Booking
+    - refundAmount: double
+    - cancelledAt: String
+    - isRefunded: boolean
+
+11. Class Notification
+----------------------
+    - user: User
+    - message: String
+    - method: String  // Email/SMS
+    - sentAt: String
+
+12. Class AdminPanel
+--------------------
+    - movies: List<Movie>
+    - shows: List<Show>
+    - theatres: List<Theatre>
+    - addMovie(), removeMovie()
+    - addShowtime(), manageSeats()
+
+13. Class Dashboard
+-------------------
+    - theatre: Theatre
+    - totalBookings: int
+    - totalRevenue: double
+    - topMovies: List<Movie>
+    - occupancyRate: double
+
+
+Feature	                                        Classes Involved
+---------------------------------------------------------------------------------
+Register & Login	                              User
+Browse movies & showtimes	                      Movie, Show
+Theatre selection with seat layout            	Theatre, Hall, SeatLayout, Seat
+Live seat availability                        	Seat, Show
+Book tickets (single/multiple)	                Booking, Seat, Show, User
+Filter by location, language, genre           	Movie, Theatre
+Payment gateway integration (mock)	            Payment, Booking
+Ticket history and download	                    Booking, User
+Cancellation with refund policy	Cancellation    Policy, Booking
+Notification via email/SMS (mock)	              Notification, User
+Admin panel to add/remove movies              	AdminPanel, Movie
+Showtime and seat management	                  Show, Hall, AdminPanel
+Dashboard for theatre analytics               	Dashboard, Theatre, Booking, Show
+------------------------------------------------------------------------------------
+
