@@ -77,14 +77,8 @@
     - cancelledAt: String
     - isRefunded: boolean
 
-11. Class Notification
-----------------------
-    - user: User
-    - message: String
-    - method: String  // Email/SMS
-    - sentAt: String
 
-12. Class AdminPanel
+11. Class AdminPanel
 --------------------
     - movies: List<Movie>
     - shows: List<Show>
@@ -92,7 +86,7 @@
     - addMovie(), removeMovie()
     - addShowtime(), manageSeats()
 
-13. Class Dashboard
+12. Class Dashboard
 -------------------
     - theatre: Theatre
     - totalBookings: int
@@ -108,11 +102,9 @@ Browse movies & showtimes	                      Movie, Show
 Theatre selection with seat layout            	Theatre, Hall, SeatLayout, Seat
 Live seat availability                        	Seat, Show
 Book tickets (single/multiple)	                Booking, Seat, Show, User
-Filter by location, language, genre           	Movie, Theatre
 Payment gateway integration (mock)	            Payment, Booking
 Ticket history and download	                    Booking, User
-Cancellation with refund policy	Cancellation    Policy, Booking
-Notification via email/SMS (mock)	              Notification, User
+Cancellation with refund Cancellation           Policy, Booking
 Admin panel to add/remove movies              	AdminPanel, Movie
 Showtime and seat management	                  Show, Hall, AdminPanel
 Dashboard for theatre analytics               	Dashboard, Theatre, Booking, Show
